@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { mobile } from './../reponsive';
 
 const Container = styled.div`
   flex: 1;
@@ -22,6 +23,8 @@ const Image = styled.img`
   border-radius: 20px;
   align-items: center;
   justify-content: center;
+
+  ${mobile({ height: "30vh" })}
 `
 
 const Info = styled.div`
